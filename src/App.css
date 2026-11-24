@@ -1,0 +1,92 @@
+:root { font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #172c3d; background: #f3f6f8; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; display: block; }
+#root { width: 100%; max-width: none; margin: 0; padding: 0; text-align: left; }
+button, input { font: inherit; }
+button { cursor: pointer; transition: background .15s; }
+button:disabled { cursor: wait; opacity: .6; }
+button:focus-visible, input:focus-visible { outline: 3px solid #2c92ce; outline-offset: 4px; }
+button { border: 0; }
+h1, h2, h3, p { margin: 0; }
+.planner-app { min-height: 100vh; background: #f3f6f8; color: #172c3d; }
+.topbar { background: #102b3d; color: white; padding: 27px max(5vw, calc((100vw - 1230px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 15px; }
+.brand-mark { background: #c7f5dd; color: #153c36; border-radius: 12px; padding: 13px 10px; font-weight: 800; font-size: 18px; letter-spacing: -1px; }
+.brand h1 { font-size: 21px; font-weight: 650; letter-spacing: -.5px; }
+.brand span:not(.brand-mark) { display: block; font-size: 12px; color: #a8bdca; margin-top: 5px; }
+.prototype-label { color: #b9ceda; font-size: 11px; letter-spacing: 1.5px; }
+.page-nav { display: flex; gap: 28px; padding: 0 max(5vw, calc((100vw - 1230px) / 2)); background: white; border-bottom: 1px solid #dce5ea; }
+.page-nav button { border-radius: 0; color: #667a89; padding: 19px 0 16px; border-bottom: 3px solid transparent; background: none; font-size: 14px; font-weight: 600; }
+.page-nav button.active { color: #08775d; border-bottom-color: #08775d; }
+.page-content { max-width: 1360px; padding: 36px max(0px, 0px) 35px; width: 90%; margin: auto; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 25px; }
+.eyebrow { color: #558171; font-size: 10px; font-weight: 750; letter-spacing: 2px; margin-bottom: 9px; }
+h2 { font-size: 32px; letter-spacing: -1.2px; font-weight: 650; }
+.section-heading p:not(.eyebrow) { color: #70808d; font-size: 14px; margin-top: 9px; }
+.secondary { background: white; color: #304956; border: 1px solid #cfdae2; border-radius: 7px; padding: 10px 15px; font-size: 12px; white-space: nowrap; }
+.secondary:hover { background: #eaf1f3; }
+.demo-notice { display: flex; flex-wrap: wrap; gap: 7px 15px; border: 1px solid #eadcae; background: #fff9e9; border-radius: 8px; color: #796020; font-size: 12px; padding: 13px 16px; margin-bottom: 24px; }
+.wb-layout { display: grid; grid-template-columns: minmax(320px, .9fr) minmax(0, 1.3fr); gap: 24px; align-items: start; }
+.card { background: white; border: 1px solid #dee6eb; border-radius: 13px; box-shadow: 0 3px 8px #132b3e03; }
+.loading-card { padding: 23px; }
+.card-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+h3 { font-size: 16px; font-weight: 650; }
+.card-heading p { font-size: 12px; color: #7b8b97; margin-top: 6px; }
+.small-tag { background: #eff5f5; color: #55776f; border-radius: 5px; padding: 5px 7px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.aircraft-base { display: flex; justify-content: space-between; gap: 14px; padding: 18px; background: #f3f7f9; border-radius: 8px; margin: 22px 0; }
+.aircraft-base div:last-child { text-align: right; }
+.aircraft-base strong { display: block; font-size: 15px; }
+.aircraft-base span { display: block; color: #7c8c96; font-size: 10px; margin-top: 6px; }
+.group-label { font-size: 10px; color: #7b8a95; font-weight: 700; letter-spacing: 1.3px; margin-bottom: 8px; }
+.load-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #f0f3f5; }
+.load-label label { font-weight: 600; font-size: 13px; }
+.load-label span { display: block; color: #8b97a0; font-size: 10px; margin-top: 5px; }
+.load-controls { width: 142px; flex-shrink: 0; }
+.number-box { display: flex; align-items: center; border: 1px solid #dbe4e9; border-radius: 6px; background: #fcfdfd; padding-right: 10px; }
+.number-box input { color: #243d4c; width: 100%; min-width: 0; padding: 7px 8px; border: 0; border-radius: 6px; background: transparent; font-size: 14px; font-weight: 600; }
+.number-box span { font-size: 10px; color: #8395a1; }
+.slider { display: block; width: 100%; accent-color: #12876c; margin: 8px 0 0; height: 5px; cursor: pointer; }
+.fuel-heading { margin-top: 24px; }
+.footnote { font-size: 10px; color: #81919b; line-height: 1.6; margin-top: 16px; }
+.graph-card { padding: 23px 22px 17px; }
+.envelope-chart { display: block; width: 100%; margin-top: 13px; overflow: visible; }
+.envelope-chart text { font: 11px Inter, -apple-system, sans-serif; fill: #81919b; }
+.grid-line { stroke: #e9eef2; stroke-width: 1; }
+.demo-envelope { fill: #e2f3ec; stroke: #6fbaa3; stroke-width: 2; }
+.envelope-chart .envelope-label { fill: #82af9e; font-size: 10px; letter-spacing: 1px; }
+.fuel-line { stroke: #536f94; stroke-width: 2; stroke-dasharray: 5 4; }
+.departure-dot { fill: #0a8167; stroke: white; stroke-width: 2.5; }
+.landing-dot { fill: #497bc0; stroke: white; stroke-width: 2.5; }
+.envelope-chart .point-label { fill: #35576e; font-size: 10px; font-weight: 750; }
+.legend { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin: 3px 0 5px; font-size: 10px; color: #657d8b; }
+.legend span { display: flex; align-items: center; gap: 6px; }
+.legend i { width: 8px; height: 8px; display: inline-block; }
+.legend-dep { background: #0a8167; border-radius: 50%; }
+.legend-ldg { background: #497bc0; transform: rotate(45deg); }
+.muted { color: #94a1aa; }
+.summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 18px; }
+.summary-card { padding: 20px; }
+.weight-value { display: block; font-size: 30px; letter-spacing: -1px; margin: 10px 0 5px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.weight-value small { color: #8a9aa4; font-size: 13px; font-weight: 400; letter-spacing: 0; }
+.summary-card > p:not(.group-label) { color: #7c8c96; font-size: 12px; }
+.summary-card p strong { color: #385565; font-weight: 550; margin-left: 5px; }
+.status { display: inline-block; font-size: 10px; font-weight: 600; margin-top: 15px; border-radius: 5px; padding: 6px 8px; }
+.within { color: #27775c; background: #eaf6ee; }
+.outside { color: #a14d2a; background: #fff0e9; }
+.detail-strip { display: flex; justify-content: space-between; gap: 10px; padding: 17px 20px; margin-top: 16px; }
+.detail-strip span { display: block; font-size: 10px; color: #7b8d98; }
+.detail-strip strong { display: block; font-size: 14px; font-weight: 600; margin-top: 6px; }
+.negative { color: #b4472b; }
+.input-error { background: #fff0e9; color: #9c422b; border-radius: 8px; padding: 16px; font-size: 13px; margin-top: 18px; }
+.page-footer { max-width: 1360px; width: 90%; margin: auto; border-top: 1px solid #dfe7ec; padding: 21px 0 30px; display: flex; justify-content: space-between; gap: 15px; color: #8c9ba5; font-size: 9px; letter-spacing: 1px; }
+.page-footer span { letter-spacing: 0; }
+.weather-card { padding: 28px; max-width: 740px; }
+.weather-card label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+.weather-search { display: flex; gap: 12px; }
+.weather-search input { background: white; color: #173b4d; border: 1px solid #cddbe3; border-radius: 7px; padding: 12px; max-width: 180px; width: 50%; letter-spacing: 2px; }
+.primary { background: #0a8167; color: white; padding: 12px 18px; border-radius: 7px; font-size: 13px; }
+.metar-report { white-space: pre-wrap; overflow-wrap: anywhere; padding: 20px; background: #f3f7f9; border-radius: 8px; line-height: 1.7; }
+[hidden] { display: none !important; }
+@media (min-width: 1500px) { .page-content, .page-footer { width: 1230px; } }
+@media (max-width: 850px) { .wb-layout { grid-template-columns: 1fr; } .results-column { min-width: 0; } .prototype-label { display: none; } }
+@media (max-width: 450px) { .section-heading { align-items: flex-start; } h2 { font-size: 25px; } .section-heading p:not(.eyebrow) { font-size: 12px; } .secondary { padding: 9px; font-size: 10px; } .loading-card, .graph-card { padding: 16px; } .load-controls { width: 125px; } .summary-card { padding: 14px; } .weight-value { font-size: 25px; } .detail-strip { padding: 14px; } .page-footer { flex-direction: column; } .legend { gap: 12px; } }
