@@ -90,3 +90,8 @@ h3 { font-size: 16px; font-weight: 650; }
 @media (min-width: 1500px) { .page-content, .page-footer { width: 1230px; } }
 @media (max-width: 850px) { .wb-layout { grid-template-columns: 1fr; } .results-column { min-width: 0; } .prototype-label { display: none; } }
 @media (max-width: 450px) { .section-heading { align-items: flex-start; } h2 { font-size: 25px; } .section-heading p:not(.eyebrow) { font-size: 12px; } .secondary { padding: 9px; font-size: 10px; } .loading-card, .graph-card { padding: 16px; } .load-controls { width: 125px; } .summary-card { padding: 14px; } .weight-value { font-size: 25px; } .detail-strip { padding: 14px; } .page-footer { flex-direction: column; } .legend { gap: 12px; } }
+
+/* Separate observations and forecasts while keeping raw report line breaks. */
+.weather-report { margin-top: 24px; border-top: 1px solid #e3eaef; padding-top: 20px; }
+.weather-message { margin-top: 12px; color: #647987; font-size: 13px; line-height: 1.6; }
+.weather-report .metar-report { margin-bottom: 0; font-size: 13px; }
